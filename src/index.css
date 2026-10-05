@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #eaf4ff;
+  color: #1b2a49;
+  font-family: "Nunito", system-ui, sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fredoka", "Nunito", sans-serif;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #1b2a49;
+  outline-offset: 2px;
+}
+.dark body { background: #0f172a; color: #e2e8f0; }
+.dark .bg-white { background-color: #1e293b; }
+.dark .bg-\[\#eaf4ff\] { background-color: #334155; }
+.dark .border-\[\#1b2a49\] { border-color: #64748b; }
+.dark .bg-\[\#ffc93c\] { color: #1b2a49; }
+.dark input, .dark textarea { background: #0f172a; color: #e2e8f0; }
+
+.dark { color-scheme: dark; }
+.dark select,
+.dark option {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #f1f5f9;
+}
+.dark .bg-\[\#ffc93c\] h1,
+.dark .bg-\[\#ffc93c\] h2,
+.dark .bg-\[\#ffc93c\] h3 {
+  color: #1b2a49;
+}
+.dark .text-black,
+.dark :is(
+    [class*="text-slate-"],
+    [class*="text-gray-"],
+    [class*="text-zinc-"],
+    [class*="text-neutral-"]
+  ):not([class*="-100"]):not([class*="-200"]):not([class*="-300"]) {
+  color: #cbd5e1;
+}
