@@ -4,9 +4,7 @@ import ProductCard from '../../components/ProductCard';
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('Semua');
-
   const categories = ['Semua', ...new Set(products.map((item) => item.category))];
-
   const filteredProducts = selectedCategory === 'Semua'
     ? products
     : products.filter((item) => item.category === selectedCategory);

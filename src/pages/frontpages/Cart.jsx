@@ -9,8 +9,6 @@ export default function Cart() {
   return (
     <section className="max-w-2xl">
       <h2 className="text-3xl font-bold mb-4">Keranjang</h2>
-
-      {/* Conditional rendering: kosong atau berisi */}
       {items.length === 0 ? (
         <p>
           Keranjang masih kosong.{" "}

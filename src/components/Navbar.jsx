@@ -76,7 +76,7 @@ export default function Navbar({ storeName, searchQuery, setSearchQuery }) {
           } md:flex w-full md:w-auto md:order-2 flex-col md:flex-row md:items-center gap-1`}
         >
           <NavLink to="/" end className={linkClass} onClick={close}>
-            Beranda
+            Katalog
           </NavLink>
           <NavLink to="/cart" className={linkClass} onClick={close}>
             Keranjang
